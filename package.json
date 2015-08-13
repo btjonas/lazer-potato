@@ -1,0 +1,14 @@
+{
+  "name": "server2",
+  "version": "1.0.0",
+  "description": "beacon server for ROAR",
+  "main": "beacon_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonas Brönmark",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
