@@ -42,9 +42,13 @@ app.all('/secret', function (req, res, next) {
   next(); // pass control to the next handler
 });
 
+/*
 var server = app.listen(8080, function () {
   var host = server.address().address;
-  var port = server.address().port;
-
+  var port = server.address().port;  // this was used to run server locally
   console.log('Beacon service provider listening at http://%s:%s', host, port);
 });
+*/
+
+var port = process.env.PORT || CONFIG.port; // this is used when running on heroku
+app.listen(port);
