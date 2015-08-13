@@ -2,14 +2,21 @@
 var beaconBadRequest = { beaconidfound: false };
 
 // Installed beacons and the equipment they 'monitor'. Minor values used
-var beacon1337 = { beaconidfound: true, equipment: 
+var beacon3823 = { beaconidfound: true, beaconname: "Jonas1", equipment: 
 	[{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
 	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] };
 
-var beacon1000 = { beaconidfound: true, equipment: 
+var beacon56235 = { beaconidfound: true, beaconname: "Jonas2", equipment: 
 	[{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
 	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] };	
 
+var beacon7754 = { beaconidfound: true, beaconname: "Jonas3", equipment: 
+  [{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
+  { name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] }; 
+
+var beacon30303 = { beaconidfound: true, beaconname: "Jonas4", equipment: 
+  [{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
+  { name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] };   
 
 var express = require('express');
 var app = express();
@@ -42,6 +49,7 @@ app.all('/secret', function (req, res, next) {
   next(); // pass control to the next handler
 });
 
+// BOOT - this was used when testing locally 
 /*
 var server = app.listen(8080, function () {
   var host = server.address().address;
@@ -50,5 +58,6 @@ var server = app.listen(8080, function () {
 });
 */
 
-var port = process.env.PORT || CONFIG.port; // this is used when running on heroku
+// BOOT - this is used when running on heroku
+var port = process.env.PORT || CONFIG.port; 
 app.listen(port);
