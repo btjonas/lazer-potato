@@ -3,20 +3,20 @@ var beaconBadRequest = { beaconidfound: false };
 
 // Installed beacons and the equipment they 'monitor'. Minor values used
 var beacon3823 = { beaconidfound: true, beaconname: "Jonas1", equipment: 
-	[{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
+	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed' },
 	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] };
 
 var beacon56235 = { beaconidfound: true, beaconname: "Jonas2", equipment: 
-	[{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
+	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed' },
 	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] };	
 
 var beacon7754 = { beaconidfound: true, beaconname: "Jonas3", equipment: 
-  [{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
+  [{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed' },
   { name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] }; 
 
 var beacon30303 = { beaconidfound: true, beaconname: "Jonas4", equipment: 
-  [{ name: 'Garbage Can' , status: 'fully cunctional' , service: 'no not needed' },
-  { name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service' }] };   
+  [{ name: 'Asynchronous motor' , status: '4500 RPM' , service: 'no not needed' },
+  { name: 'Bipolar motor' , status: 'Inactive - 0 RPM' , service: '2 months until service' }] };   
 
 var express = require('express');
 var app = express();
@@ -38,16 +38,20 @@ app.get('/beaconid', function (req, res) {
 });
 
 // Depricated, a really silly way of using GET witouth using query string data
+/*
 app.get('/beaconid/42', function (req, res) {
   res.json(id42);
 });
+*/
 
 // Depricated experiment function only
+/*
 app.all('/secret', function (req, res, next) {
   console.log(req);
   res.send('Hey this is secret, see node.js console log');
   next(); // pass control to the next handler
 });
+*/
 
 // BOOT - this was used when testing locally 
 /*
