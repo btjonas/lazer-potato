@@ -11,8 +11,9 @@ var beacon56235 = { beaconidfound: true, beaconname: "Jonas2", equipment:
 	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder' }] };	
 
 var beacon7754 = { beaconidfound: true, beaconname: "Jonas3", equipment: 
-  [{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder' },
-  { name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder' }] }; 
+  [{ name: 'Output Valve' , status: 'Open' , service: 'no not needed', picture: 'valve' },
+  { name: 'Input Valve' , status: 'Open' , service: 'no not needed', picture: 'valve' },
+  { name: 'Asynchronous motor' , status: 'Inactive - 0 RPM' , service: '2 months until service', picture: 'async_motor' }] }; 
 
 var beacon30303 = { beaconidfound: true, beaconname: "Jonas4", equipment: 
   [{ name: 'Asynchronous motor' , status: '4500 RPM' , service: 'no not needed', picture: 'async_motor' },
