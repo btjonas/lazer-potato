@@ -1,23 +1,23 @@
-// Resonse used when bad request is made to server
+// Resonse sent from Heroku server when a bad request is made (i.e., unknown minor number is used)
 var beaconBadRequest = { beaconidfound: false };
 
-// Installed beacons and the equipment they 'monitor'. Minor values used
-var beacon3823 = { beaconidfound: true, beaconname: "Jonas1", equipment: 
-	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder' },
-	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder' }] };
+// Avaliable beacons and the equipment they are aware of, minor numbers are used to request equipment for a specific beacon
+var beacon3823 = { beaconidfound: true, beaconname: Jonas1, equipment: 
+	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] },
+	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] }] };
 
 var beacon56235 = { beaconidfound: true, beaconname: "Jonas2", equipment: 
-	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder' },
-	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder' }] };	
+	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] },
+	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] }] };
 
 var beacon7754 = { beaconidfound: true, beaconname: "Jonas3", equipment: 
-  [{ name: 'Output Valve' , status: 'Open' , service: 'no not needed', picture: 'valve' },
-  { name: 'Input Valve' , status: 'Open' , service: 'no not needed', picture: 'valve' },
-  { name: 'Asynchronous motor' , status: 'Inactive - 0 RPM' , service: '2 months until service', picture: 'async_motor' }] }; 
+  [{ name: 'Output Valve' , status: 'Open' , service: 'no not needed', picture: 'valve', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] },
+  { name: 'Input Valve' , status: 'Open' , service: 'no not needed', picture: 'valve', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] },
+  { name: 'Asynchronous motor' , status: 'Inactive - 0 RPM' , service: '2 months until service', picture: 'async_motor', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] }] }; 
 
 var beacon30303 = { beaconidfound: true, beaconname: "Jonas4", equipment: 
-  [{ name: 'Asynchronous motor' , status: '4500 RPM' , service: 'no not needed', picture: 'async_motor' },
-  { name: 'Bipolar motor' , status: 'Inactive - 0 RPM' , service: '2 months until service', picture: 'bipolar_motor' }] };   
+  [{ name: 'Asynchronous motor' , status: '4500 RPM' , service: 'no not needed', picture: 'async_motor', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] },
+  { name: 'Bipolar motor' , status: 'Inactive - 0 RPM' , service: '2 months until service', picture: 'bipolar_motor', functionality: [{ faceplate: true, servicehistory: true, pid: true, processgraphics: true }] }] };   
 
 var express = require('express');
 var app = express();
