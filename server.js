@@ -4,9 +4,9 @@ var beaconBadRequest = { beaconidfound: false };
 // Avaliable beacons and the equipment they are aware of, minor numbers are used to request equipment for a specific beacon
 var beacon3823 = { beaconidfound: true, beaconname: "Jonas1", equipment: 
 	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder', functionality: 
-    [{ name: 'Pickup time', picture: 'placeholder' }, { name: 'Service history', picture: 'service_history_icon' }] },
+    [{ name: 'Pickup time', picture: 'default' }, { name: 'Service history', picture: 'service_history_icon' }] },
 	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder', functionality:
-    [{ name: 'Service history', picture: 'service_history_icon' }, { name: 'Equipment usage', picture: 'placeholder' }, { name: 'Days since last service', picture: 'placeholder' }] }] };
+    [{ name: 'Service history', picture: 'service_history_icon' }, { name: 'Equipment usage', picture: 'default' }, { name: 'Days since last service', picture: 'default' }] }] };
 
 var beacon56235 = { beaconidfound: true, beaconname: "Jonas2", equipment: 
 	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder', functionality: 
