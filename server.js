@@ -10,23 +10,23 @@ var beacon3823 = { beaconidfound: true, beaconname: "Jonas1", equipment:
 
 var beacon56235 = { beaconidfound: true, beaconname: "Jonas2", equipment: 
 	[{ name: 'Garbage Can' , status: 'fully functional' , service: 'no not needed', picture: 'placeholder', functionality: 
-    [{ name: 'Faceplate' }, { name: 'Service history' }, { name: 'PID' }, { name: 'Process graphics' }] },
+    [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] },
 	{ name: 'Garage Door Opener' , status: 'operational' , service: '2 months until service', picture: 'placeholder', functionality: 
-    [{ name: 'Faceplate' }, { name: 'Service history' }, { name: 'PID' }, { name: 'Process graphics' }] }] };
+    [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] }] };
 
 var beacon7754 = { beaconidfound: true, beaconname: "Jonas3", equipment: 
   [{ name: 'Output Valve' , status: 'Open' , service: 'no not needed', picture: 'valve', functionality: 
-    [{ name: 'Faceplate' }, { name: 'Service history' }, { name: 'PID' }, { name: 'Process graphics' }] },
+    [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] },
   { name: 'Input Valve' , status: 'Open' , service: 'no not needed', picture: 'valve', functionality: 
-    [{ name: 'Faceplate' }, { name: 'Service history' }, { name: 'PID' }, { name: 'Process graphics' }] },
+    [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] },
   { name: 'Asynchronous motor' , status: 'Inactive - 0 RPM' , service: '2 months until service', picture: 'async_motor', functionality: 
-    [{ name: 'Faceplate' }, { name: 'Service history' }, { name: 'PID' }, { name: 'Process graphics' }] }] };
+    [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] }] };
 
 var beacon30303 = { beaconidfound: true, beaconname: "Jonas4", equipment: 
   [{ name: 'Asynchronous motor' , status: '4500 RPM' , service: 'no not needed', picture: 'async_motor', functionality: 
-    [{ name: 'Faceplate' }, { name: 'Service history' }, { name: 'PID' }, { name: 'Process graphics' }] },
+    [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] },
   { name: 'Bipolar motor' , status: 'Inactive - 0 RPM' , service: '2 months until service', picture: 'bipolar_motor', functionality: 
-    [{ name: 'Faceplate' }, { name: 'Service history' }, { name: 'PID' }, { name: 'Process graphics' }] }] };   
+    [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] }] };   
 
 var functionality3823 = { beaconidfound: true, functionality: 
   [{faceplate: true, servicehistory: true, pid: true, processgraphics: true }, 
