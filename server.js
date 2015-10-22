@@ -25,7 +25,7 @@ var beacon7754 = { beaconidfound: true, beaconname: "Jonas3", equipment:
 var beacon30303 = { beaconidfound: true, beaconname: "Jonas4", equipment: 
   [{ id: '40', name: 'Motor-1471' , status: '0 RPM' , service: 'no not needed', picture: 'bipolar_motor', motor_num: '1', functionality: 
     [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] },
-  { id: '41', name: 'Motor-no-serial' , status: '0 RPM' , service: '2 months until service', picture: 'bipolar_motor', motor_num: '2', functionality: 
+  { id: '41', name: 'Motor-2566' , status: '0 RPM' , service: '2 months until service', picture: 'bipolar_motor', motor_num: '2', functionality: 
     [{ name: 'Faceplate', picture: 'faceplate_icon' }, { name: 'Service history', picture: 'service_history_icon' }, { name: 'PID', picture: 'pid_icon' }, { name: 'Process graphics', picture: 'process_graphics_icon' }] }] };   
 
 var functionality3823 = { beaconidfound: true, functionality: 
